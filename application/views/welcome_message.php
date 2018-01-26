@@ -48,7 +48,7 @@ License URL: https://www.designmaz.net/licence/
 		<div class="container">
 			<div class="header-grids">
 				<div class="logo">
-					<h1><a  href="index.html"><span>Travelad</span></a></h1>
+					<h1><a href="<?php echo base_url(); ?>Welcome"><span>Travelad</span></a></h1>
 				</div>
 				<!--navbar-header-->
 				<div class="header-dropdown">
@@ -66,14 +66,11 @@ License URL: https://www.designmaz.net/licence/
 				<div class="top-nav">
 					<span class="menu"><img src="<?php echo base_url();?>asset/images/menu.png" alt="" /></span>
 					<ul class="nav1">
-						<li class="active"><a href="index.html">Flights</a></li>
-						<li><a href="hotels.php">Hotels</a></li>
-						<li><a href="holidays.html">Holidays</a></li>
-						<li><a href="flights-hotels.html">Flight+Hotel</a></li>
-						<li><a href="bus.html">Bus</a></li>
-						<li><a href="trains.html">Trains</a></li>
-						<li><a href="weekend.html">Weekend Getaways</a></li>
-						<li><a href="deals.html">Deals</a></li>
+						<li><a href="<?php echo base_url(); ?>Welcome">Home</a></li>
+						<li><a href="<?php echo base_url(); ?>about">About</a></li>
+						<li><a href="<?php echo base_url(); ?>contacts">Contacts</a></li>
+						<li><a href="<?php echo base_url(); ?>products">Products</a></li>
+						<li><a href="<?php echo base_url(); ?>deals">Deals</a></li>
 					</ul>
 					<div class="clearfix"> </div>
 					<!-- script-for-menu -->
@@ -103,20 +100,9 @@ License URL: https://www.designmaz.net/licence/
 													<input type="password" name="password" id="password">
 												</fieldset>
 												<input type="submit" id="login" value="Sign in">
-											</fieldset>
-											<span><a href="#">Forgot your password?</a></span>
-											<div class="or-grid">
-												<p>OR</p>
-											</div>
-											<div class="social-sits">
-												<div class="facebook-button">
-													<a href="#">Connect with Facebook</a>
-												</div>
-												<div class="chrome-button">
-													<a href="#">Connect with Google</a>
-												</div>
+												</fieldset>
 												<div class="button-bottom">
-													<p>New account? <a href="signup.html">Signup</a></p>
+													<p>New account? <a href="<?php echo base_url(); ?>signup">Sign Up</a></p>
 												</div>
 											</div>
 										</div>
@@ -421,7 +407,7 @@ License URL: https://www.designmaz.net/licence/
 	</div>
 	<!-- //banner -->
 	<div class="move-text">
-		<div class="marquee">Register your hotel with us free of cost.<a href="signup.html">Here</a></div>
+		<div class="marquee">Register your hotel with us free of cost.<a href="<?php echo base_url(); ?>signup">Signup</a></div>
 		<script type="text/javascript" src="<?php echo base_url();?>asset/js/jquery.marquee.min.js"></script>
         <script>
 		  $('.marquee').marquee({ pauseOnHover: true });

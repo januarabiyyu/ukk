@@ -8,18 +8,18 @@
   <!-- Tell the browser to be responsive to screen width -->
   <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
   <!-- Bootstrap 3.3.6 -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/adminlte/bootstrap/css/bootstrap.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>gudang/adminlte/bootstrap/css/bootstrap.min.css">
   <!-- Font Awesome -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.5.0/css/font-awesome.min.css">
   <!-- Ionicons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
   <!-- DataTables -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/adminlte/plugins/datatables/dataTables.bootstrap.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>gudang/adminlte/plugins/datatables/dataTables.bootstrap.css">
   <!-- Theme style -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/adminlte/dist/css/AdminLTE.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>gudang/adminlte/dist/css/AdminLTE.min.css">
   <!-- AdminLTE Skins. Choose a skin from the css/skins
   folder instead of downloading all of them to reduce the load. -->
-  <link rel="stylesheet" href="<?php echo base_url(); ?>assets/adminlte/dist/css/skins/_all-skins.min.css">
+  <link rel="stylesheet" href="<?php echo base_url(); ?>gudang/adminlte/dist/css/skins/_all-skins.min.css">
 
   <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
   <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -65,7 +65,7 @@
                     <li><!-- start message -->
                       <a href="#">
                         <div class="pull-left">
-                          <img src="<?php echo base_url(); ?>assets/adminlte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                          <img src="<?php echo base_url(); ?>gudang/adminlte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
                         </div>
                         <h4>
                           Support Team
@@ -78,7 +78,7 @@
                     <li>
                       <a href="#">
                         <div class="pull-left">
-                          <img src="<?php echo base_url(); ?>assets/adminlte/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                          <img src="<?php echo base_url(); ?>gudang/adminlte/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
                         </div>
                         <h4>
                           AdminLTE Design Team
@@ -90,7 +90,7 @@
                     <li>
                       <a href="#">
                         <div class="pull-left">
-                          <img src="<?php echo base_url(); ?>assets/adminlte/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                          <img src="<?php echo base_url(); ?>gudang/adminlte/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
                         </div>
                         <h4>
                           Developers
@@ -102,7 +102,7 @@
                     <li>
                       <a href="#">
                         <div class="pull-left">
-                          <img src="<?php echo base_url(); ?>assets/adminlte/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
+                          <img src="<?php echo base_url(); ?>gudang/adminlte/dist/img/user3-128x128.jpg" class="img-circle" alt="User Image">
                         </div>
                         <h4>
                           Sales Department
@@ -114,7 +114,7 @@
                     <li>
                       <a href="#">
                         <div class="pull-left">
-                          <img src="<?php echo base_url(); ?>assets/adminlte/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
+                          <img src="<?php echo base_url(); ?>gudang/adminlte/dist/img/user4-128x128.jpg" class="img-circle" alt="User Image">
                         </div>
                         <h4>
                           Reviewers
@@ -248,13 +248,13 @@
             <!-- User Account: style can be found in dropdown.less -->
             <li class="dropdown user user-menu">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                <img src="<?php echo base_url(); ?>assets/adminlte/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
+                <img src="<?php echo base_url(); ?>gudang/adminlte/dist/img/user2-160x160.jpg" class="user-image" alt="User Image">
                 <span class="hidden-xs"><?php echo $this->session->userdata('fullname'); ?></span>
               </a>
               <ul class="dropdown-menu">
                 <!-- User image -->
                 <li class="user-header">
-                  <img src="<?php echo base_url(); ?>assets/adminlte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+                  <img src="<?php echo base_url(); ?>gudang/adminlte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
 
                   <p>
                     <small><?php echo $this->session->userdata('username'); ?></small>
@@ -302,7 +302,7 @@
         <!-- Sidebar user panel -->
         <div class="user-panel">
           <div class="pull-left image">
-            <img src="<?php echo base_url(); ?>assets/adminlte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
+            <img src="<?php echo base_url(); ?>gudang/adminlte/dist/img/user2-160x160.jpg" class="img-circle" alt="User Image">
           </div>
           <div class="pull-left info">
             <p><?php echo $this->session->userdata('fullname'); ?></p>
@@ -610,20 +610,20 @@
 <!-- ./wrapper -->
 
 <!-- jQuery 2.2.3 -->
-<script src="<?php echo base_url(); ?>assets/adminlte/plugins/jQuery/jquery-2.2.3.min.js"></script>
+<script src="<?php echo base_url(); ?>gudang/adminlte/plugins/jQuery/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
-<script src="<?php echo base_url(); ?>assets/adminlte/bootstrap/js/bootstrap.min.js"></script>
+<script src="<?php echo base_url(); ?>gudang/adminlte/bootstrap/js/bootstrap.min.js"></script>
 <!-- DataTables -->
-<script src="<?php echo base_url(); ?>assets/adminlte/plugins/datatables/jquery.dataTables.min.js"></script>
-<script src="<?php echo base_url(); ?>assets/adminlte/plugins/datatables/dataTables.bootstrap.min.js"></script>
+<script src="<?php echo base_url(); ?>gudang/adminlte/plugins/datatables/jquery.dataTables.min.js"></script>
+<script src="<?php echo base_url(); ?>gudang/adminlte/plugins/datatables/dataTables.bootstrap.min.js"></script>
 <!-- SlimScroll -->
-<script src="<?php echo base_url(); ?>assets/adminlte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
+<script src="<?php echo base_url(); ?>gudang/adminlte/plugins/slimScroll/jquery.slimscroll.min.js"></script>
 <!-- FastClick -->
-<script src="<?php echo base_url(); ?>assets/adminlte/plugins/fastclick/fastclick.js"></script>
+<script src="<?php echo base_url(); ?>gudang/adminlte/plugins/fastclick/fastclick.js"></script>
 <!-- AdminLTE App -->
-<script src="<?php echo base_url(); ?>assets/adminlte/dist/js/app.min.js"></script>
+<script src="<?php echo base_url(); ?>gudang/adminlte/dist/js/app.min.js"></script>
 <!-- AdminLTE for demo purposes -->
-<script src="<?php echo base_url(); ?>assets/adminlte/dist/js/demo.js"></script>
+<script src="<?php echo base_url(); ?>gudang/adminlte/dist/js/demo.js"></script>
 <!-- page script -->
 <script>
   $(function () {
