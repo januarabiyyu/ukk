@@ -18,10 +18,18 @@ class products extends CI_Controller {
 	 * map to /index.php/welcome/<method_name>
 	 * @see https://codeigniter.com/user_guide/general/urls.html
 	 */
+	function __construct(){
+		parent::__construct();
+		$this->load->model('m_data_rute');
+		$this->load->model('m_rute');
+		$this->load->library('encryption');
+		}
+
 	public function index()
 	{
-		$this->load->view('products');
-	}
+		$data['tb_rute']= $this->m_data_rute->tampil_data()->result();
+		$this->load->view('products', $data);
 
+	}
 
 }

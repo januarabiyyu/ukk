@@ -1,12 +1,7 @@
-<!--
-Author: Designmaz
-Author URL: https://www.designmaz.net
-License URL: https://www.designmaz.net/licence/
--->
 <!DOCTYPE html>
 <html>
 <head>
-<title>Home | Travelad - Free HTML5 CSS3 Travel Hotel Template | Designmaz</title>
+<title>Home | Travelwuzz </title>
 <!-- Custom Theme files -->
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
@@ -48,14 +43,14 @@ License URL: https://www.designmaz.net/licence/
 		<div class="container">
 			<div class="header-grids">
 				<div class="logo">
-					<h1><a href="<?php echo base_url(); ?>Welcome"><span>Travelad</span></a></h1>
+					<h1><a href="<?php echo base_url(); ?>Welcome"><span>Travelwuzz</span></a></h1>
 				</div>
 				<!--navbar-header-->
 				<div class="header-dropdown">
 					<div class="emergency-grid">
 						<ul>
 							<li>Toll Free : </li>
-							<li class="call">+1 234 567 8901</li>
+							<li class="call">+62 6778 990</li>
 						</ul>
 					</div>
 					<div class="clearfix"> </div>
@@ -163,7 +158,7 @@ License URL: https://www.designmaz.net/licence/
 						  <ul class="resp-tabs-list">
 							  <li class="resp-tab-item" aria-controls="tab_item-0" role="tab"><span>Return</span></li>
 							  <li class="resp-tab-item" aria-controls="tab_item-1" role="tab"><span>One way</span></li>
-							  <div class="clearfix"></div>
+							<div class="clearfix"></div>
 						  </ul>		
 						  <!---->		  	 
 						 <div class="resp-tabs-container">
@@ -178,29 +173,39 @@ License URL: https://www.designmaz.net/licence/
 											</script>
 											<!---/End-date-piker---->
 											<!-- Set here the key for your domain in order to hide the watermark on the web server -->
-											
+											<form id="search" method="post" action=<?php echo base_url('products') ?>>
 											<div class="online_reservation">
 													<div class="b_room">
 														<div class="booking_room">
+															
 															<div class="reservation">
 																<ul>		
 																	<li  class="span1_of_1 desti">
-																		 <h5>Flying from</h5>
+																		 <h5>Rute from</h5>
 																		 <div class="book_date">
-																			 <form>
-																				<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-																				<input type="text" placeholder="Type Departure City" class="typeahead1 input-md form-control tt-input" required="">
+																			 <form >
+																			 	<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+																				<select id="country" onchange="change_country(this.value)" class="frm-field required" >																				
+																				<?php  foreach ($tb_rute as $su) { ?>
+																				<option value="<?php echo $su->rute_from ?>"><?php echo $su->rute_from ?></option>
+																				<?php } ?>	
+																			  </select>
 																			 </form>
 																		 </div>					
 																	 </li>
 																	 <li  class="span1_of_1 left desti">
-																		 <h5>Flying to</h5>
+																		 <h5>Rute to</h5>
 																		 <div class="book_date">
-																		 <form>
-																			<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
-																			<input type="text" placeholder="Type Destination City" class="typeahead1 input-md form-control tt-input" required="">
-																		 </form>
-																		 </div>		
+																			 <form>
+																				<span class="glyphicon glyphicon-map-marker" aria-hidden="true"></span>
+																				<select id="country" onchange="change_country(this.value)" class="frm-field required" >																				
+																				<?php  foreach ($tb_rute as $su) { ?>
+																				<option value="<?php echo $su->rute_to ?>"><?php echo $su->rute_to?></option>
+																				<?php } ?>	
+																			  </select>
+																			 </form>
+																		 </div>					
+																	 </li>
 																	 </li>
 																	 <div class="clearfix"></div>
 																</ul>
@@ -208,7 +213,7 @@ License URL: https://www.designmaz.net/licence/
 															<div class="reservation">
 																<ul>	
 																	 <li  class="span1_of_1">
-																		 <h5>Departure</h5>
+																		 <h5>Depart at</h5>
 																		 <div class="book_date">
 																		 <form>
 																			<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
@@ -216,63 +221,14 @@ License URL: https://www.designmaz.net/licence/
 																		 </form>
 																		 </div>		
 																	 </li>
-																	 <li  class="span1_of_1 left">
-																		 <h5>Return</h5>
-																		 <div class="book_date">
-																			 <form>
-																				<span class="glyphicon glyphicon-calendar" aria-hidden="true"></span>
-																				<input type="date" value="Select date" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Select date';}">
-																			</form>
-																		 </div>					
-																	 </li>
-																	 <li class="span1_of_1 left adult">
-																		 <h5>Adults (18+)</h5>
-																		 <!----------start section_room----------->
-																		 <div class="section_room">
-																			  <select id="country" onchange="change_country(this.value)" class="frm-field required">
-																					<option value="null">1</option>
-																					<option value="null">2</option>         
-																					<option value="AX">3</option>
-																					<option value="AX">4</option>
-																					<option value="AX">5</option>
-																					<option value="AX">6</option>
-																			  </select>
-																		 </div>	
-																	</li>
-																	<li class="span1_of_1 left children">
-																		 <h5>Children (0-17)</h5>
-																		 <!----------start section_room----------->
-																		 <div class="section_room">
-																			  <select id="country" onchange="change_country(this.value)" class="frm-field required">
-																					<option value="null">1</option>
-																					<option value="null">2</option>         
-																					<option value="AX">3</option>
-																					<option value="AX">4</option>
-																					<option value="AX">5</option>
-																					<option value="AX">6</option>
-																			  </select>
-																		 </div>	
-																	</li>
-																	<li class="span1_of_1 economy">
-																		 <h5>Class</h5>
-																		 <!----------start section_room----------->
-																		 <div class="section_room">
-																			  <select id="country" onchange="change_country(this.value)" class="frm-field required">
-																					<option value="null">Economy</option>
-																					<option value="null">Business</option>     
-																			  </select>
-																		 </div>	
-																	</li>
-																	 <div class="clearfix"></div>
-																</ul>
 															</div>
 															<div class="reservation">
 																<ul>	
 																	 <li class="span1_of_3">
 																			<div class="date_btn">
-																				<form>
+																					
 																					<input type="submit" value="Search" />
-																				</form>
+																				
 																			</div>
 																	 </li>
 																	 <div class="clearfix"></div>
@@ -337,8 +293,8 @@ License URL: https://www.designmaz.net/licence/
 																		 </div>		
 																	 </li>
 																	 <li class="span1_of_1 left">
-																		 <h5>Adults (18+)</h5>
-																		 <!----------start section_room----------->
+																		 <h5>juh (18+)</h5>
+																		 
 																		 <div class="section_room">
 																			  <select id="country" onchange="change_country(this.value)" class="frm-field required">
 																					<option value="null">1</option>
@@ -352,7 +308,7 @@ License URL: https://www.designmaz.net/licence/
 																	</li>
 																	<li class="span1_of_1 left tab-children">
 																		 <h5>Children (0-17)</h5>
-																		 <!----------start section_room----------->
+																		 
 																		 <div class="section_room">
 																			  <select id="country" onchange="change_country(this.value)" class="frm-field required">
 																					<option value="null">1</option>
@@ -407,7 +363,7 @@ License URL: https://www.designmaz.net/licence/
 	</div>
 	<!-- //banner -->
 	<div class="move-text">
-		<div class="marquee">Register your hotel with us free of cost.<a href="<?php echo base_url(); ?>signup">Signup</a></div>
+		<div class="marquee">Register your flight with us free of cost.<a href="<?php echo base_url(); ?>signup">Signup</a></div>
 		<script type="text/javascript" src="<?php echo base_url();?>asset/js/jquery.marquee.min.js"></script>
         <script>
 		  $('.marquee').marquee({ pauseOnHover: true });
@@ -427,7 +383,7 @@ License URL: https://www.designmaz.net/licence/
 						 <ul>
 							<li class="button"><a href="#">Goa Popular Hotels</a>
 								<li class="dropdown active">
-									<a href="products.html">
+									<a href="#">
 										<div class="destinations-grid">
 											<img src="<?php echo base_url();?>asset/images/a1.jpg" alt="" />
 										</div>
@@ -442,7 +398,7 @@ License URL: https://www.designmaz.net/licence/
 							</li>
 							<li class="button"><a href="#">Bangalore Popular Hotels</a>
 								<li class="dropdown">
-									<a href="products.html">
+									<a href="#">
 										<div class="destinations-grid">
 											<img src="<?php echo base_url();?>asset/images/a4.jpg" alt="" />
 										</div>
@@ -472,7 +428,7 @@ License URL: https://www.designmaz.net/licence/
 							</li>
 							<li class="button"><a href="#">Malaysia Popular Hotels</a>
 								 <li class="dropdown">
-									<a href="products.html">
+									<a href="#">
 										<div class="destinations-grid">
 											<img src="<?php echo base_url();?>asset/images/a1.jpg" alt="" />
 										</div>
@@ -498,7 +454,7 @@ License URL: https://www.designmaz.net/licence/
 									<span>Million</span>
 								</div>
 								<div class="choose-right">
-									<a href="products.html">Aliquam faucibus vehicula vulputate</a>
+									<a href="#">Aliquam faucibus vehicula vulputate</a>
 									<p>Maecenas euismod tortor a tristique convallis diam eros aliquam.</p>
 								</div>
 								<div class="clearfix"> </div>
@@ -508,7 +464,7 @@ License URL: https://www.designmaz.net/licence/
 									<span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
 								</div>
 								<div class="choose-right">
-									<a href="products.html">Sed tincidunt consectetur augue</a>
+									<a href="#">Sed tincidunt consectetur augue</a>
 									<p>Nulla bibendum libero in nunc eleifend tincidunt. Aliquam quis molestie lectus</p>
 								</div>
 								<div class="clearfix"> </div>
@@ -518,7 +474,7 @@ License URL: https://www.designmaz.net/licence/
 									<h6>$</h6>
 								</div>
 								<div class="choose-right">
-									<a href="products.html">Nullam et arcu interdum, accumsan justo</a>
+									<a href="#">Nullam et arcu interdum, accumsan justo</a>
 									<p>Maecenas dapibus eu purus vel imperdiet. Maecenas cursus, arcu sed tempus </p>
 								</div>
 								<div class="clearfix"> </div>
@@ -528,7 +484,7 @@ License URL: https://www.designmaz.net/licence/
 				</div>
 				<div class="col-md-4 banner-bottom-grid">
 					<div class="banner-bottom-middle">
-						<a href="products.html">
+						<a href="#">
 							<img src="<?php echo base_url();?>asset/images/a2.jpg" alt="" />
 							<div class="destinations-grid-info tours">
 								<h5>Book your next Malaysia holiday!</h5>
@@ -547,7 +503,7 @@ License URL: https://www.designmaz.net/licence/
 									<img src="<?php echo base_url();?>asset/images/t1.jpg" alt="" />
 								</div>
 								<div class="col-xs-7 td-middle">
-									<a href="products.html">Donec libero id lacinia</a>
+									<a href="#">Donec libero id lacinia</a>
 									<p>Dapibus eu purus vel libero in nunc</p>
 									<span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
 								</div>
@@ -561,7 +517,7 @@ License URL: https://www.designmaz.net/licence/
 									<img src="<?php echo base_url();?>asset/images/t2.jpg" alt="" />
 								</div>
 								<div class="col-xs-7 td-middle">
-									<a href="products.html">Donec libero id lacinia</a>
+									<a href="#">Donec libero id lacinia</a>
 									<p>Dapibus eu purus vel libero in nunc</p>
 									<span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
 								</div>
@@ -575,7 +531,7 @@ License URL: https://www.designmaz.net/licence/
 									<img src="<?php echo base_url();?>asset/images/t3.jpg" alt="" />
 								</div>
 								<div class="col-xs-7 td-middle">
-									<a href="products.html">Donec libero id lacinia</a>
+									<a href="#">Donec libero id lacinia</a>
 									<p>Dapibus eu purus vel libero in nunc</p>
 									<span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
 								</div>
@@ -589,7 +545,7 @@ License URL: https://www.designmaz.net/licence/
 									<img src="<?php echo base_url();?>asset/images/t4.jpg" alt="" />
 								</div>
 								<div class="col-xs-7 td-middle">
-									<a href="products.html">Donec libero id lacinia</a>
+									<a href="#">Donec libero id lacinia</a>
 									<p>Dapibus eu purus vel libero in nunc</p>
 									<span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span> <span class="glyphicon glyphicon-star" aria-hidden="true"></span>
 								</div>
@@ -603,7 +559,7 @@ License URL: https://www.designmaz.net/licence/
 				</div>
 				<div class="col-md-4 banner-bottom-grid">
 					<div class="banner-bottom-right">
-						<a href="products.html">
+						<a href="#">
 							<img src="images/a3.jpg" alt="" />
 							<div class="destinations-grid-info tours">
 									<h5>New Hotel Experiences at Your Favourite Destinations</h5>
@@ -675,19 +631,19 @@ License URL: https://www.designmaz.net/licence/
 				<div class="arrival-grids">			 
 					 <ul id="flexiselDemo1">
 						 <li>
-							 <a href="products.html"><img src="<?php echo base_url();?>asset/images/a3.jpg" alt=""/>
+							 <a href="#"><img src="<?php echo base_url();?>asset/images/a3.jpg" alt=""/>
 							 </a>
 						 </li>
 						 <li>
-							 <a href="products.html"><img src="<?php echo base_url();?>asset/images/a2.jpg" alt=""/>
+							 <a href="#"><img src="<?php echo base_url();?>asset/images/a2.jpg" alt=""/>
 							 </a>
 						 </li>
 						 <li>
-							 <a href="products.html"><img src="<?php echo base_url();?>asset/images/a4.jpg" alt=""/>
+							 <a href="#"><img src="<?php echo base_url();?>asset/images/a4.jpg" alt=""/>
 							 </a>
 						 </li>
 						 <li>
-							 <a href="products.html"><img src="<?php echo base_url();?>asset/images/a1.jpg" alt=""/>
+							 <a href="#"><img src="<?php echo base_url();?>asset/images/a1.jpg" alt=""/>
 							 </a>
 						 </li>
 						</ul>

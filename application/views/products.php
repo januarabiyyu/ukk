@@ -13,13 +13,13 @@ License URL: https://www.designmaz.net/licence/
 
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!-- //Custom Theme files -->
-<link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
-<link href="css/style.css" type="text/css" rel="stylesheet" media="all">
-<link rel="stylesheet" href="css/flexslider.css" type="text/css" media="screen" />
-<link type="text/css" rel="stylesheet" href="css/JFFormStyle-1.css" />
+<link href="<?php echo base_url();?>asset/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+<link href="<?php echo base_url();?>asset/css/style.css" type="text/css" rel="stylesheet" media="all">
+<link rel="stylesheet" href="<?php echo base_url();?>asset/css/flexslider.css" type="text/css" media="screen" />
+<link type="text/css" rel="stylesheet" href="<?php echo base_url();?>asset/css/JFFormStyle-1.css" />
 <!-- js -->
-<script src="js/jquery.min.js"></script>
-<script src="js/modernizr.custom.js"></script>
+<script src="<?php echo base_url();?>asset/js/jquery.min.js"></script>
+<script src="<?php echo base_url();?>asset/js/modernizr.custom.js"></script>
 <!-- //js -->
 <!-- fonts -->
 <link href='//fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,700,500italic,700italic,900,900italic' rel='stylesheet' type='text/css'>
@@ -35,7 +35,7 @@ License URL: https://www.designmaz.net/licence/
 		});
 	</script>
 <!--pop-up-->
-<script src="js/menu_jquery.js"></script>
+<script src="<?php echo base_url();?>asset/js/menu_jquery.js"></script>
 <!--//pop-up-->	
 <!--Google Analytics Designmaz-->
 <script>(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
@@ -64,16 +64,13 @@ License URL: https://www.designmaz.net/licence/
 			</div>
 			<div class="nav-top">
 				<div class="top-nav">
-					<span class="menu"><img src="images/menu.png" alt="" /></span>
+					<span class="menu"><img src="<?php echo base_url();?>asset/images/menu.png" alt="" /></span>
 					<ul class="nav1">
-						<li><a href="index.html">Flights</a></li>
-						<li><a href="hotels.html">Hotels</a></li>
-						<li><a href="holidays.html">Holidays</a></li>
-						<li><a href="flights-hotels.html">Flight+Hotel</a></li>
-						<li><a href="bus.html">Bus</a></li>
-						<li><a href="trains.html">Trains</a></li>
-						<li><a href="weekend.html">Weekend Getaways</a></li>
-						<li><a href="deals.html">Deals</a></li>
+						<li><a href="<?php echo base_url(); ?>Welcome">Home</a></li>
+						<li><a href="<?php echo base_url(); ?>about">About</a></li>
+						<li><a href="<?php echo base_url(); ?>contacts">Contacts</a></li>
+						<li><a href="<?php echo base_url(); ?>products">Products</a></li>
+						<li><a href="<?php echo base_url(); ?>deals">Deals</a></li>
 					</ul>
 					<div class="clearfix"> </div>
 					<!-- script-for-menu -->
@@ -87,48 +84,7 @@ License URL: https://www.designmaz.net/licence/
 							</script>
 						<!-- /script-for-menu -->
 				</div>
-				<div class="dropdown-grids">
-						<div id="loginContainer"><a href="#" id="loginButton"><span>Login</span></a>
-							<div id="loginBox">                
-								<form id="loginForm">
-									<div class="login-grids">
-										<div class="login-grid-left">
-											<fieldset id="body">
-												<fieldset>
-													<label for="email">Email Address</label>
-													<input type="text" name="email" id="email">
-												</fieldset>
-												<fieldset>
-													<label for="password">Password</label>
-													<input type="password" name="password" id="password">
-												</fieldset>
-												<input type="submit" id="login" value="Sign in">
-												<label for="checkbox"><input type="checkbox" id="checkbox"> <i>Remember me</i></label>
-											</fieldset>
-											<span><a href="#">Forgot your password?</a></span>
-											<div class="or-grid">
-												<p>OR</p>
-											</div>
-											<div class="social-sits">
-												<div class="facebook-button">
-													<a href="#">Connect with Facebook</a>
-												</div>
-												<div class="chrome-button">
-													<a href="#">Connect with Google</a>
-												</div>
-												<div class="button-bottom">
-													<p>New account? <a href="signup.html">Signup</a></p>
-												</div>
-											</div>
-										</div>
-									</div>
-								</form>
-							</div>
-						</div>
-				</div>
-				<div class="clearfix"> </div>
-			</div>
-		</div>
+				
 	</div>
 	<!--//header-->
 	<!-- banner-bottom -->
@@ -137,357 +93,42 @@ License URL: https://www.designmaz.net/licence/
 		<div class="container">
 			<div class="faqs-top-grids">
 				<div class="product-grids">
-					<div class="col-md-3 product-left">
-						<div class="h-class">
-							<h5>Hotel Class</h5>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox">
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="starTextLabel">5 Stars (18)</span>
-								</label>
-							</div>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox" checked="checked" data-track="HOT:SR:StarRating:5Star">
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="starTextLabel">4 Stars (30)</span>
-								</label>
-							</div>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox">
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="starTextLabel">3 Stars (106)</span>
-								</label>
-							</div>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox">
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="starTextLabel">2 Stars (78)</span>
-								</label>
-							</div>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox">
-									<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-									<span class="starTextLabel">1 Stars (10)</span>
-								</label>
-							</div>
-						</div>
-						<div class="h-class p-day">
-							<h5>Price per day</h5>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox" checked="checked" data-track="HOT:SR:StarRating:5Star">
-									<span class="p-day-grid">Less than $100 (76)</span>
-								</label>
-							</div>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox">
-									<span class="p-day-grid">$100 to $200 (132)</span>
-								</label>
-							</div>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox">
-									<span class="p-day-grid">$300 to $300 (223)</span>
-								</label>
-							</div>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox">
-									<span class="p-day-grid">$300 to $400 (84)</span>
-								</label>
-							</div>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox">
-									<span class="p-day-grid">$500 to $600 (23)</span>
-								</label>
-							</div>
-						</div>
-						<div class="h-class">
-							<h5>Area</h5>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="radio" name="hideRegionId" checked="checked" data-track="HOT:SR:Area">
-									<span class="p-day-grid">London</span>
-								</label>
-							</div>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="radio" name="hideRegionId"  data-track="HOT:SR:Area">
-									<span class="p-day-grid">Newyork</span>
-								</label>
-							</div>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="radio" name="hideRegionId"  data-track="HOT:SR:Area">
-									<span class="p-day-grid">New Zealand</span>
-								</label>
-							</div>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="radio" name="hideRegionId"  data-track="HOT:SR:Area">
-									<span class="p-day-grid">Los Angeles</span>
-								</label>
-							</div>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="radio" name="hideRegionId"  data-track="HOT:SR:Area">
-									<span class="p-day-grid">Sydney</span>
-								</label>
-							</div>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="radio" name="hideRegionId"  data-track="HOT:SR:Area">
-									<span class="p-day-grid">Agra</span>
-								</label>
-							</div>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="radio" name="hideRegionId"  data-track="HOT:SR:Area">
-									<span class="p-day-grid">Greece</span>
-								</label>
-							</div>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="radio" name="hideRegionId"  data-track="HOT:SR:Area">
-									<span class="p-day-grid">Singapore</span>
-								</label>
-							</div>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="radio" name="hideRegionId"  data-track="HOT:SR:Area">
-									<span class="p-day-grid">Paris</span>
-								</label>
-							</div>
-						</div>
-						<div class="h-class p-day">
-							<h5>Accommodation Type</h5>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox" checked="checked" data-track="HOT:SR:StarRating:5Star">
-									<span class="p-day-grid">Hotel resort (67)</span>
-								</label>
-							</div>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox">
-									<span class="p-day-grid">Hotel (84)</span>
-								</label>
-							</div>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox">
-									<span class="p-day-grid">Guest house (24)</span>
-								</label>
-							</div>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox">
-									<span class="p-day-grid">Apartment (34)</span>
-								</label>
-							</div>
-							<div class="hotel-price">
-								<label class="check">
-									<input type="checkbox">
-									<span class="p-day-grid">Country House (32)</span>
-								</label>
-							</div>
-						</div>
-					</div>
+		<div class="container">					
 					<div class="col-md-9 product-right">
-						<div class="product-right-grids">
-							<div class="product-right-top">
-								<div class="p-left">
-									<div class="p-right-img">
-										<a href="p-single.html"> </a>
-									</div>
-								</div>
-								<div class="p-right">
-									<div class="col-md-6 p-right-left">
-										<a href="p-single.html">Lorem ipsum dolor sit amet</a>
-										<div class="p-right-price">
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+                   		 <?php  foreach ($tb_rute as $su) { ?>
+							<div class="product-right-grids">
+								<div class="product-right-top">
+									<div class="p-left">
+										<div class="p-right-img">
+											<a href="p-single.html"> </a>
 										</div>
-										<p>Vestibulum molestie id orci eget vulputate</p>
-										<p class="p-call">+1 234 567 890</p>
 									</div>
-									<div class="col-md-6 p-right-right">
-										<h6>Rating : 4.1/5</h6>
-										<p>(123) Views</p>
-										<span class="p-offer">$140</span><span class="p-last-price">$230</span>
+									<div class="p-right">
+										<div class="col-md-6 p-right-left">
+											<a href="p-single.html"><?php echo $su->rute_from ?>-<?php echo $su->rute_to ?></a>
+											
+											<div class="p-right-price">
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+												<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
+											</div>
+											<p>Vestibulum molestie id orci eget vulputate</p>
+											<p class="p-call">+1 234 567 890</p>
+										</div>
+										
+										<div class="col-md-6 p-right-right">
+											<h6><?php echo $su->depart_at ?></h6>
+											<p>Transpotation id:<?php echo $su->transpotation_id ?></p>
+											<span class="p-offer">Rp.<?php echo $su->price ?></span>
+										</div>
+										<div class="clearfix"> </div>
 									</div>
 									<div class="clearfix"> </div>
 								</div>
-								<div class="clearfix"> </div>
 							</div>	
-						</div><div class="product-right-grids">
-							<div class="product-right-top">
-								<div class="p-left">
-									<div class="p-right-img p-right-img1">
-										<a href="p-single.html"> </a>
-									</div>
-								</div>
-								<div class="p-right">
-									<div class="col-md-6 p-right-left">
-										<a href="p-single.html">Lorem ipsum dolor sit amet</a>
-										<div class="p-right-price">
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										</div>
-										<p>Vestibulum molestie id orci eget vulputate</p>
-										<p class="p-call">+1 234 567 890</p>
-									</div>
-									<div class="col-md-6 p-right-right">
-										<h6>Rating : 4.1/5</h6>
-										<p>(123) Views</p>
-										<span class="p-offer">$240</span><span class="p-last-price">$430</span>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-								<div class="clearfix"> </div>
-							</div>	
-						</div>
-						<div class="product-right-grids">
-							<div class="product-right-top">
-								<div class="p-left">
-									<div class="p-right-img p-right-img2">
-										<a href="p-single.html"> </a>
-									</div>
-								</div>
-								<div class="p-right">
-									<div class="col-md-6 p-right-left">
-										<a href="p-single.html">Lorem ipsum dolor sit amet</a>
-										<div class="p-right-price">
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										</div>
-										<p>Vestibulum molestie id orci eget vulputate</p>
-										<p class="p-call">+1 234 567 890</p>
-									</div>
-									<div class="col-md-6 p-right-right">
-										<h6>Rating : 4.1/5</h6>
-										<p>(123) Views</p>
-										<span class="p-offer">$120</span><span class="p-last-price">$310</span>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-								<div class="clearfix"> </div>
-							</div>	
-						</div>
-						<div class="product-right-grids">
-							<div class="product-right-top">
-								<div class="p-left">
-									<div class="p-right-img p-right-img3">
-										<a href="p-single.html"> </a>
-									</div>
-								</div>
-								<div class="p-right">
-									<div class="col-md-6 p-right-left">
-										<a href="p-single.html">Lorem ipsum dolor sit amet</a>
-										<div class="p-right-price">
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										</div>
-										<p>Vestibulum molestie id orci eget vulputate</p>
-										<p class="p-call">+1 234 567 890</p>
-									</div>
-									<div class="col-md-6 p-right-right">
-										<h6>Rating : 4.1/5</h6>
-										<p>(123) Views</p>
-										<span class="p-offer">$140</span><span class="p-last-price">$230</span>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-								<div class="clearfix"> </div>
-							</div>	
-						</div>
-						<div class="product-right-grids">
-							<div class="product-right-top">
-								<div class="p-left">
-									<div class="p-right-img p-right-img1">
-										<a href="p-single.html"> </a>
-									</div>
-								</div>
-								<div class="p-right">
-									<div class="col-md-6 p-right-left">
-										<a href="p-single.html">Lorem ipsum dolor sit amet</a>
-										<div class="p-right-price">
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										</div>
-										<p>Vestibulum molestie id orci eget vulputate</p>
-										<p class="p-call">+1 234 567 890</p>
-									</div>
-									<div class="col-md-6 p-right-right">
-										<h6>Rating : 4.1/5</h6>
-										<p>(123) Views</p>
-										<span class="p-offer">$380</span><span class="p-last-price">$540</span>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-								<div class="clearfix"> </div>
-							</div>	
-						</div>
-						<div class="product-right-grids">
-							<div class="product-right-top">
-								<div class="p-left">
-									<div class="p-right-img p-right-img2">
-										<a href="p-single.html"> </a>
-									</div>
-								</div>
-								<div class="p-right">
-									<div class="col-md-6 p-right-left">
-										<a href="p-single.html">Lorem ipsum dolor sit amet</a>
-										<div class="p-right-price">
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-											<span class="glyphicon glyphicon-star" aria-hidden="true"></span>
-										</div>
-										<p>Vestibulum molestie id orci eget vulputate</p>
-										<p class="p-call">+1 234 567 890</p>
-									</div>
-									<div class="col-md-6 p-right-right">
-										<h6>Rating : 4.1/5</h6>
-										<p>(123) Views</p>
-										<span class="p-offer">$360</span><span class="p-last-price">$750</span>
-									</div>
-									<div class="clearfix"> </div>
-								</div>
-								<div class="clearfix"> </div>
-							</div>	
-						</div>
-					</div>
-					<div class="clearfix"> </div>
-				</div>
-			</div>
+						<?php } ?>	
+					</div>	
 		</div>
 		<!-- //container -->
 	</div>
@@ -591,9 +232,9 @@ License URL: https://www.designmaz.net/licence/
 						<h4>Download our mobile Apps</h4>
 						<div class="d-apps">
 							<ul>
-								<li><a href="#"><img src="images/app1.png" alt="" /></a></li>
-								<li><a href="#"><img src="images/app2.png" alt="" /></a></a></li>
-								<li><a href="#"><img src="images/app3.png" alt="" /></a></a></li>
+								<li><a href="#"><img src="<?php echo base_url();?>asset/images/app1.png" alt="" /></a></li>
+								<li><a href="#"><img src="<?php echo base_url();?>asset/images/app2.png" alt="" /></a></a></li>
+								<li><a href="#"><img src="<?php echo base_url();?>asset/images/app3.png" alt="" /></a></a></li>
 							</ul>
 						</div>
 					</div>
@@ -601,9 +242,9 @@ License URL: https://www.designmaz.net/licence/
 						<h4>We Accept</h4>
 						<div class="a-cards">
 							<ul>
-								<li><a href="#"><img src="images/c1.png" alt="" /></a></li>
-								<li><a href="#"><img src="images/c2.png" alt="" /></a></a></li>
-								<li><a href="#"><img src="images/c3.png" alt="" /></a></a></li>
+								<li><a href="#"><img src="<?php echo base_url();?>asset/images/c1.png" alt="" /></a></li>
+								<li><a href="#"><img src="<?php echo base_url();?>asset/images/c2.png" alt="" /></a></a></li>
+								<li><a href="#"><img src="<?php echo base_url();?>asset/images/c3.png" alt="" /></a></a></li>
 							</ul>
 						</div>
 					</div>

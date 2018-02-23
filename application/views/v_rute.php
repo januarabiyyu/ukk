@@ -343,92 +343,14 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-    <!-- Content Header (Page header) -->
-    <section class="content-header">
-      <h1>
-        Dashboard
-        <small>Control panel</small>
-      </h1>
-      <ol class="breadcrumb">
-        <li><a href="#"><i class="fa fa-dashboard"></i> Home</a></li>
-        <li class="active">Dashboard</li>
-      </ol>
-    </section>
-
-    <!-- Main content -->
-    <section class="content">
-      <!-- Small boxes (Stat box) -->
-      <div class="row">
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-aqua">
-            <div class="inner">
-              <h3><?php echo  $this->db->count_all('tb_user')?></h3>
-
-              <p>New Orders</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-bag"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-green">
-            <div class="inner">
-              <h3>23<sup style="font-size: 20px">%</sup></h3>
-
-              <p>Bounce Rate</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-stats-bars"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-yellow">
-            <div class="inner">
-              <h3><?php echo  $this->db->count_all('tb_user')?></h3>
-
-              <p>Jumlah User</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-person-add"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
-        <div class="col-lg-3 col-xs-6">
-          <!-- small box -->
-          <div class="small-box bg-red">
-            <div class="inner">
-              <h3><?php echo  $this->db->count_all('tb_user')?></h3>
-
-              <p>Unique Visitors</p>
-            </div>
-            <div class="icon">
-              <i class="ion ion-pie-graph"></i>
-            </div>
-            <a href="#" class="small-box-footer">More info <i class="fa fa-arrow-circle-right"></i></a>
-          </div>
-        </div>
-        <!-- ./col -->
-      </div>
-      <!-- /.row -->
       <!-- Main row -->
        <div class="row">
           <div class="col-xs-12">
 
             <div class="box">
               <div class="box-header">
-                <h3 class="box-title">Data users</h3>     
-                  <a href=<?php echo base_url("crud/tambah/"); ?> class="btn btn-primary a-btn-slide-text" style="position:absolute;right:0;margin-right:10px; ">
+                <h3 class="box-title">Rute</h3>     
+                  <a href=<?php echo base_url("crud/tambah_rute/"); ?> class="btn btn-primary a-btn-slide-text" style="position:absolute;right:0;margin-right:10px; ">
                           <span class="glyphicon glyphicon-plus" aria-hidden="true"></span>
                           <span><strong>Add</strong></span>            
                         </a>
@@ -439,27 +361,29 @@
                   <thead>
                     <tr>
                       <th>No id</th>
-                      <th>Fullname</th>
-                      <th>Username</th>
-                      <th>Password</th>
-                      <th>Level</th>
-                      <th>Action</th>
+                      <th>Depart At</th>
+                      <th>Rute From</th>
+                      <th>Rute To</th>
+                      <th>Price</th>
+                      <th>Transpotation id</th>
                     </tr>
                   </thead>
                   <tbody>
-                    <?php  foreach ($tb_user as $u) { ?>
+                    <?php  foreach ($tb_rute as $su) { ?>
                     <tr>
-                      <td><?php echo $u->id; ?></td>
-                      <td><?php echo $u->fullname; ?></td>
-                      <td><?php echo $u->username; ?></td>
-                      <td><?php echo base64_decode($u->password); ?></td>
-                      <td><?php echo $u->level; ?></td>
+                      <td><?php echo $su->id; ?></td>
+                      <td><?php echo $su->depart_at; ?></td>
+                      <td><?php echo $su->rute_from; ?></td>
+                      <td><?php echo $su->rute_to; ?></td>
+                      <td><?php echo $su->price; ?></td>
+                      <td><?php echo $su->transpotation_id; ?></td>
+
                       <td>
-                        <a href=<?php echo base_url("crud/edit/".$u->id); ?> class="btn btn-primary a-btn-slide-text">
+                        <a href=<?php echo base_url("crud/edit_rute/".$su->id); ?> class="btn btn-primary a-btn-slide-text">
                           <span class="glyphicon glyphicon-edit" aria-hidden="true"></span>
                           <span><strong>Edit</strong></span>            
                         </a>
-                        <a href=<?php echo base_url("crud/hapus/".$u->id); ?> class="btn btn-primary a-btn-slide-text">
+                        <a href=<?php echo base_url("crud/hapus_rute/".$su->id); ?> class="btn btn-primary a-btn-slide-text">
                          <span class="glyphicon glyphicon-remove" aria-hidden="true"></span>
                          <span><strong>Delete</strong></span>            
                        </a>
@@ -749,6 +673,7 @@
     }
   }
 ?>
+
 
 <script>
   $(function () {

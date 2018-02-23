@@ -56,7 +56,7 @@ nav.navbar.navbar-default {
     font-size: 1em;
 }
 .logo h1 a span{
-	color:#6fd508;
+	color:#d3195a;
 }
 /*-- top-nav --*/
 .nav-top{
@@ -70,21 +70,21 @@ nav.navbar.navbar-default {
 .top-nav ul {
     padding: 0;
     margin: 0;
-    border-bottom: solid 2px #6fd508;
+    border-bottom: solid 2px #d3195a;
 }
 .top-nav ul li{
     display: inline-block;
     text-decoration: none;
 }
 .top-nav ul li.active a{
-	background:#6fd508;
+	background:#d3195a;
 	color:#FFF;
-	border: solid 1px #6fd508;
+	border: solid 1px #d3195a;
 }
 .top-nav ul li a:hover{
-	background:#6fd508;
+	background:#d3195a;
 	color:#FFF;	
-	border: solid 1px #6fd508;
+	border: solid 1px #d3195a;
 }
 .top-nav ul li a{
     display: block;
@@ -99,14 +99,14 @@ nav.navbar.navbar-default {
 }
 .dropdown-grids {
     float: right;
-    border-bottom: solid 2px #6fd508;
+    border-bottom: solid 2px #d3195a;
 }
 /*--Login --*/
 #loginContainer {
     position: relative;
     padding: 0.5em 0em;
-    border: solid 1px #6fd508;
-    background: #6fd508;
+    border: solid 1px #d3195a;
+    background: #d3195a;
 }
 #loginContainer a span{
     padding: .5em 2em;
@@ -187,11 +187,11 @@ fieldset#body {
     -webkit-apperance: none;
 }
 #loginForm #login {
-	background: #6fd508;
+	background: #d3195a;
     color: #fff;
     font-size: 1em;
     padding: 5px 20px;
-    border: 1px solid #6fd508;
+    border: 1px solid #d3195a;
     transition: all .5s;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
@@ -333,12 +333,12 @@ input:focus {
     margin: .5em 0 0 0;
 }
 .offer-right a{
-    background: #6fd508;
+    background: #d3195a;
     text-shadow: none;
     color: #FFFFFF;
     font-size: .9em;
     padding: .5em 1em;
-	border: solid 1px #6fd508;
+	border: solid 1px #d3195a;
 }
 .offer-right a:hover{
 	border: solid 1px #FFF;
@@ -393,7 +393,7 @@ i.resp-tab-item.lost {
     color: #2B2B2B;	
 }
 .resp-tab-active {
-    background: #6fd508;
+    background: #d3195a;
     text-shadow: none;
     color: #FFFFFF;
 }
@@ -534,10 +534,10 @@ li.span1_of_1.left.tab-children {
 select {
     color: #9F9F9F!important;
     font-size: 12px;
-    padding: 7px 33px 7px 7px;
+    padding: 7px 100px 7px 7px;
     outline: none;
     border: none;
-    background: url(../images/arrow.png) no-repeat 76% center #ffffff;
+    background: url(../images/arrow.png) no-repeat 95% center #ffffff;
     border-radius: 0px;
     -webkit-border-radius: 0px;
     -moz-border-radius: 0px;
@@ -612,7 +612,7 @@ select option{
 }
 .date_btn form input[type="submit"] {
     text-transform: capitalize;
-    background: #6fd508;
+    background: #d3195a;
     color: #FFFFFF;
     padding: .5em 1em;
     border: none;
@@ -874,7 +874,7 @@ li.button a span{
 .choose-left h5{
     font-size: 3em;
     margin: 0;
-    color: #6fd508;
+    color: #d3195a;
 }
 .choose-left p{
 	font-size:.9em;
@@ -895,7 +895,7 @@ li.button a span{
     font-weight: 600;
 }
 .choose-right a:hover{
-	color:#6fd508;
+	color:#d3195a;
 }
 .choose-right p,.td-middle p,.date-text p{
     font-size: .9em;
@@ -908,7 +908,7 @@ li.button a span{
 }
 .glyphicon-globe{
 	font-size: 3em;
-    color: #6fd508;
+    color: #d3195a;
 }
 .choose-left h6{
     font-size: 1.8em;
@@ -918,7 +918,7 @@ li.button a span{
     line-height: 1.6em;
     width: 45px;
     height: 45px;
-    background: #6fd508;
+    background: #d3195a;
     border-radius: 30px;
 	-webkit-border-radius: 30px;
 	-moz-border-radius: 30px;
@@ -944,10 +944,10 @@ li.button a span{
     font-weight: 600;
 }
 .td-middle a:hover{
-	color:#6fd508;
+	color:#d3195a;
 }
 .td-right p{
-    color: #6fd508;
+    color: #d3195a;
     font-size: 1.3em;
     margin: 1em 0 0 0;
     font-weight: 600;
@@ -971,7 +971,7 @@ li.button a span{
     box-shadow: 0 0 0;
 }
 .date-text a:hover{
-	color:#6fd508;
+	color:#d3195a;
 }
 .news-grids{
     min-height: 510px;
@@ -1126,7 +1126,7 @@ ul#flexiselDemo1 li a h4:hover{
 	color:#000;
 }
 .news-letter-grid p a:hover{
-	color:#6fd508;
+	color:#d3195a;
 }
 .news-letter-grid input[type="text"] {
     width: 69%;
@@ -1153,8 +1153,8 @@ ul#flexiselDemo1 li a h4:hover{
     font-weight: 600;
     margin: 0em 0 0 0;
     -webkit-appearance: none;
-    background: #6fd508;
-    border: solid 1px #6FD508;
+    background: #d3195a;
+    border: solid 1px #d3195a;
 }
 .news-letter-grid input[type="submit"]:hover {
     background: #337ab7;
@@ -1254,7 +1254,7 @@ ul#flexiselDemo1 li a h4:hover{
 	text-decoration:none;
 }
 .copyright p a:hover{
-    color: #6FD508;
+    color: #d3195a;
 }
 /*-- about --*/
 .about-facts {
@@ -1410,7 +1410,7 @@ ul#flexiselDemo1 li a h4:hover{
     margin: 1em 0;
 }
 .weekend-grid-info p{
-    color: #6fd508;
+    color: #d3195a;
     font-size: 2em;
     margin: 0;
     font-weight: 600;
@@ -1441,7 +1441,7 @@ ul#flexiselDemo1 li a h4:hover{
     text-decoration: line-through;
 }
 .deals-price p{
-    color: #6fd508;
+    color: #d3195a;
     font-size: 1.5em;
     margin: 0;
 }
@@ -1567,7 +1567,7 @@ ul#flexiselDemo1 li a h4:hover{
 }
 .contact-para input[type="submit"]{
     font-size: 1em;
-    background: #6fd508;
+    background: #d3195a;
     padding: 0.7em 3em;
     text-align: center;
     color: #fff;
@@ -1612,7 +1612,7 @@ p.your-para{
     color: #555555;
 }
 .blog-left-grid p a {
-    color: #6fd508;
+    color: #d3195a;
     text-decoration: none;
 }
 .blog-left-grid a img {
@@ -1637,7 +1637,7 @@ p.your-para{
 }
 .blog-left-right a:hover {
     text-decoration: none;
-    color: #6fd508;
+    color: #d3195a;
 }
 .Categories h3,.comments h3,.response h3,.book-left-info h3,.opinion h3{
     padding-bottom: .5em;
@@ -1728,7 +1728,7 @@ p.your-para{
     margin-right: 1em;
 }
 .response-text-right ul li a {
-    color: #6fd508;
+    color: #d3195a;
     font-size: .9em;
     text-decoration: none;
 }
@@ -1806,12 +1806,12 @@ p.your-para{
     font-size: .9em;
 }
 .book-left-form input[type="submit"] {
-    background: #6fd508;
+    background: #d3195a;
     color: #fff;
     font-size: 1em;
     margin-bottom: 1em;
     padding: 5px 20px;
-    border: 1px solid #6fd508;
+    border: 1px solid #d3195a;
     transition: all .5s;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
@@ -1915,7 +1915,7 @@ span.starTextLabel {
     padding: 1em 0;
 }
 .p-right-img a{
-    background: url(../images/p1.jpg) no-repeat 0px 0px;
+    background: url(../images/logogaruda.png) no-repeat 0px 0px;
     min-height: 150px;
     background-size: cover;
 	display: block;
@@ -1959,7 +1959,7 @@ span.starTextLabel {
 	text-align:right;
 }
 .p-right-right h6{
-    color: #6fd508;
+    color: #d3195a;
     font-weight: 600;
     font-size: 1.2em;
     margin: 0;
@@ -2009,7 +2009,7 @@ border:1px solid #d5d5d5;
 }
 .spl-btn-bor {
     padding: 8px 20px;
-    background: #6fd508;
+    background: #d3195a;
 }
 .spl-btn-bor span{
 margin-right: 10px;
@@ -2192,7 +2192,7 @@ top:0;
 }
 .book-button-column a {
     text-transform: capitalize;
-    background: #6fd508;
+    background: #d3195a;
     color: #FFFFFF;
     padding: .5em 1em;
     border: none;

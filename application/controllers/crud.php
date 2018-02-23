@@ -12,11 +12,15 @@ class Crud extends CI_Controller{
  
 	function index(){
 		$data['tb_user'] = $this->m_data->tampil_data()->result();
+		$data['js_yang_dimuat'] = array('adminrute.js');
 		$this->load->view('v_admin',$data);
 	}
  
 	function tambah(){
 		$this->load->view('v_admin_data_tambah_user');
+	}
+	function tambah_rute(){
+		$this->load->view('v_admin_data_tambah_rute');
 	}
  
 	function tambah_aksi(){
@@ -33,7 +37,26 @@ class Crud extends CI_Controller{
 		);
  
 		$this->m_data->input_data($data,'tb_user');
-		redirect('admin/');
+		redirect('login/');
+	}
+	
+	function tambah_rute_aksi(){
+	
+		$depart_at = $this->input->post('depart_at');
+		$rute_from = $this->input->post('rute_from');
+		$rute_to = $this->input->post('rute_to');
+		$price = $this->input->post('price');
+		$transpotation_id = $this->input->post('transpotation_id');
+		$data = array(
+			'depart_at' => $depart_at,
+			'rute_from' => $rute_from,
+			'rute_to' => $rute_to,
+			'price' => $price,
+			'transpotation_id' => $transpotation_id,
+		);
+ 
+		$this->m_data->input_data($data,'tb_rute');
+		redirect('rute/');
 	}
 
 	function edit($id){
@@ -41,11 +64,23 @@ class Crud extends CI_Controller{
 	$data['tb_user'] = $this->m_data->edit_data($where,'tb_user')->result();
 	$this->load->view('v_admin_data_edit_user',$data);
 	}
+	
+	function edit_rute($id){
+	$where = array('id' => $id);
+	$data['tb_rute'] = $this->m_data->edit_data($where,'tb_rute')->result();
+	$this->load->view('v_admin_data_edit_rute',$data);
+	}
  
 	function hapus($id){
 		$where = array('id' => $id);
 		$this->m_data->hapus_data($where,'tb_user');
 		redirect('admin/');
+	}
+
+	function hapus_rute($id){
+		$where = array('id' => $id);
+		$this->m_data->hapus_data($where,'tb_rute');
+		redirect('rute/');
 	}
 
 	function update(){
@@ -67,10 +102,30 @@ class Crud extends CI_Controller{
 
 	$this->m_data->update_data($where,$data,'tb_user');
 	redirect('admin/');
-	
-	// $query = $this->db->query('UPDATE `tb_user` SET `username` = "'.$username.'", `password` = "'.$password.'", `fullname` = "'.$fullname.'", `level` = "'.$level.'" WHERE `tb_user`.`id` = "'.$id.'"');
-	// 	if ($query) {
-	// 		echo redirect('admin/');
-	// 	}
+
+
 	}
+	function update_rute(){
+		$id = $this->input->post('id');	
+		$depart_at = $this->input->post('depart_at');
+		$rute_from = $this->input->post('rute_from');
+		$rute_to = $this->input->post('rute_to');
+		$price = $this->input->post('price');
+		$transpotation_id = $this->input->post('transpotation_id');
+		$data = array(
+			'depart_at' => $depart_at,
+			'rute_from' => $rute_from,
+			'rute_to' => $rute_to,
+			'price' => $price,
+			'transpotation_id' => $transpotation_id,
+		);
+
+		$where = array(
+			'id' => $id
+		);
+ 
+		$this->m_data->update_data($where,$data,'tb_rute');
+		redirect('rute/');
+	
+		}
 }

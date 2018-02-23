@@ -14,6 +14,7 @@ class Admin extends CI_Controller {
 	public function index()
 	{
 		$data['tb_user']= $this->m_data->tampil_data()->result();
+		$data['js_yang_dimuat'] = array('adminuser.js');
 		$this->load->view('v_admin',$data);
 	}
 }
